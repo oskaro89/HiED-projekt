@@ -32,5 +32,92 @@ public class Lecture {
 		this.categories = categories;
 	}
 	
+	public double getJaccard(Lecture lecture){
+		double agregation = 0;
+		double disjunction = 0;
+		
+		if (type.equals(lecture.type)){
+			agregation++;
+			disjunction++;
+		} else {
+			disjunction += 2;
+		}
+		
+		if (language.equals(lecture.language)){
+			agregation++;
+			disjunction++;
+		} else {
+			disjunction += 2;
+		}
+		
+		if (parent_id.equals(lecture.parent_id)){
+			agregation++;
+			disjunction++;
+		} else {
+			disjunction += 2;
+		}
+		
+		if (views.equals(lecture.views)){
+			agregation++;
+			disjunction++;
+		} else {
+			disjunction += 2;
+		}
+		
+		if (rec_date.equals(lecture.rec_date)){
+			agregation++;
+			disjunction++;
+		} else {
+			disjunction += 2;
+		}
+		
+		if (rec_date.equals(lecture.pub_date)){
+			agregation++;
+			disjunction++;
+		} else {
+			disjunction += 2;
+		}
+		
+		if (rec_date.equals(lecture.name)){
+			agregation++;
+			disjunction++;
+		} else {
+			disjunction += 2;
+		}
+		
+		if (rec_date.equals(lecture.description)){
+			agregation++;
+			disjunction++;
+		} else {
+			disjunction += 2;
+		}
+		
+		if (rec_date.equals(lecture.slide_titles)){
+			agregation++;
+			disjunction++;
+		} else {
+			disjunction += 2;
+		}
+		
+		disjunction += lecture.authors.size();
+		for (Integer author: authors) {
+			if (lecture.authors.contains(author)){
+				agregation++;
+			} else {
+				disjunction++;
+			}
+		}
+		
+		disjunction += lecture.categories.size();
+		for (Integer category: categories) {
+			if (lecture.categories.contains(category)){
+				agregation++;
+			} else {
+				disjunction++;
+			}
+		}
+		return agregation / disjunction;
+	}
+	
 
 }

@@ -37,7 +37,6 @@ public class AuthorFactory {
 				stmt.close();
 				conn.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}

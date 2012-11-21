@@ -1,8 +1,3 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 
 public class Author {
@@ -14,5 +9,27 @@ public class Author {
 		this.id = id;
 		this.gender = gender;
 		this.lectures = lectures;
+	}
+	
+	public double getJaccard(Author author){
+		double agregation = 0;
+		double disjunction = 0;
+		
+		if (gender.equals(author.gender)){
+			agregation++;
+			disjunction++;
+		} else {
+			disjunction += 2;
+		}
+		
+		disjunction += author.lectures.size();
+		for (Integer lecture : lectures) {
+			if (author.lectures.contains(lecture)){
+				agregation++;
+			} else {
+				disjunction++;
+			}
+		}
+		return agregation / disjunction;
 	}
 }
