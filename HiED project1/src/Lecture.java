@@ -1,4 +1,10 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class Lecture {
@@ -117,6 +123,45 @@ public class Lecture {
 			}
 		}
 		return agregation / disjunction;
+	}
+	
+
+	public static ArrayList<Integer> getLecturesIds(){
+		ResultSet rs = null;
+		Statement stmt = null; 
+		Connection conn = null;
+		ArrayList<Integer> idList = new ArrayList<Integer>();
+		
+		try {
+			Class.forName("org.postgresql.Driver");
+			conn = DriverManager.getConnection("jdbc:odbc:Database");
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery("SELECT id FROM lectures");
+
+			while (rs.next())
+				idList.add(rs.getInt("id"));
+
+		} catch (Exception e) {
+			System.out.println(e);
+		} finally {
+			try {
+				rs.close();
+				stmt.close();
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return idList;
+	}
+
+	
+	public HashMap<Integer, Double> getJacards(){
+		HashMap<Integer, Double> jacardsList = new HashMap<Integer, Double>();
+		for (Integer otherLectureId : getLecturesIds()) {
+			jacardsList.put(otherLectureId, getJaccard(LectureFactory.getLecture(otherLectureId)));
+		}
+		return jacardsList;
 	}
 	
 
