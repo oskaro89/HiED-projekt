@@ -17,20 +17,22 @@ public class AuthorFactory {
 		
 		try {
 			Class.forName("org.postgresql.Driver");
-			conn = DriverManager.getConnection("jdbc:odbc:Database");
+			conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/videolectures","damian",",[psql].");
 			stmt = conn.createStatement();
-			rs = stmt.executeQuery("SELECT * FROM authors " +
-					"NATURAL JOIN authors_lectures" +
+			rs = stmt.executeQuery("SELECT * FROM authors a " +
+					"LEFT JOIN authors_lectures l " +
+					"ON a.id = l.author_id " +
 					"WHERE id = " + id);
 
 			rs.next();
 			gender = rs.getString("gender");
+			lectures.add(rs.getInt("lecture_id"));
 			
 			while (rs.next())
 				lectures.add(rs.getInt("lecture_id"));
 
 		} catch (Exception e) {
-			System.out.println(e);
+			e.printStackTrace();
 		} finally {
 			try {
 				rs.close();

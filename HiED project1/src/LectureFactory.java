@@ -26,7 +26,7 @@ public class LectureFactory {
 		
 		try {
 			Class.forName("org.postgresql.Driver");
-			conn = DriverManager.getConnection("jdbc:odbc:Database");
+			conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/videolectures","damian",",[psql].");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery("SELECT * FROM lectures " +
 					"NATURAL JOIN authors_lectures " +
@@ -41,8 +41,8 @@ public class LectureFactory {
 			rec_date = rs.getString("rec_date");
 			pub_date = rs.getString("pub_date");
 			name = rs.getString("name");
-			description = rs.getString("description");
-			slide_titles = rs.getString("slide_titles");
+//			description = rs.getString("description");
+//			slide_titles = rs.getString("slide_titles");
 			
 			while (rs.next()) {
 				Integer temp = rs.getInt("category_id");

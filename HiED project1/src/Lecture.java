@@ -134,7 +134,7 @@ public class Lecture {
 		
 		try {
 			Class.forName("org.postgresql.Driver");
-			conn = DriverManager.getConnection("jdbc:odbc:Database");
+			conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/videolectures","damian",",[psql].");
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery("SELECT id FROM lectures");
 
