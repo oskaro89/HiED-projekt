@@ -69,10 +69,42 @@ public class Author {
 		return agregation / disjunction;
 	}
 	
+	private double getMinimumValue(HashMap<Integer, Double> map){
+		double min = Double.MAX_VALUE;
+		for (Integer i : map.keySet()) {
+			if (min > map.get(i))
+				min = map.get(i);
+		}
+		return min;
+	}
+	
+	private Integer getMinimumKey(HashMap<Integer, Double> map){
+		double min = Double.MAX_VALUE;
+		Integer key = -1;
+		for (Integer i : map.keySet()) {
+			if (min > map.get(i)){
+				min = map.get(i);
+				key = i;
+			}
+		}
+		return key;
+	}
+	
 	public HashMap<Integer, Double> getJacards(){
+		int i = 1000;
 		HashMap<Integer, Double> jacardsList = new HashMap<Integer, Double>();
 		for (Integer otherAuthorId : getAuthorsIds()) {
-			jacardsList.put(otherAuthorId, getJaccard(AuthorFactory.getAuthor(otherAuthorId)));
+			i--;
+			double jaccardValue = getJaccard(AuthorFactory.getAuthor(otherAuthorId));
+			if (jacardsList.size() < 50) {				
+				jacardsList.put(otherAuthorId, jaccardValue);
+			} else if (jaccardValue > getMinimumValue(jacardsList)) {
+				jacardsList.remove(getMinimumKey(jacardsList));
+				jacardsList.put(otherAuthorId, jaccardValue);
+			}
+			
+			if (i < 1)
+				return jacardsList;
 		}
 		return jacardsList;
 	}
