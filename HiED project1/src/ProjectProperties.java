@@ -1,3 +1,7 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.PropertyResourceBundle;
 import java.util.ResourceBundle;
 
 public class ProjectProperties {
@@ -6,7 +10,14 @@ public class ProjectProperties {
 	private String password;
 	
 	public ProjectProperties(){
-		ResourceBundle rb = ResourceBundle.getBundle("project.properties");
+		PropertyResourceBundle rb = null;
+		try {
+			rb = new PropertyResourceBundle(new FileInputStream("resources/project.properties"));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 		urlAddress = rb.getString("urlAddress");
 		user = rb.getString("user");
