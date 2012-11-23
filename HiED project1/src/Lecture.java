@@ -8,6 +8,7 @@ import java.util.HashMap;
 
 
 public class Lecture {
+	static ProjectProperties p = new ProjectProperties();
 	private Integer id;
 	private String type;
 	private String language;
@@ -134,7 +135,7 @@ public class Lecture {
 		
 		try {
 			Class.forName("org.postgresql.Driver");
-			conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/videolectures","damian",",[psql].");
+			conn = DriverManager.getConnection(p.getUrlAddress(), p.getUser(), p.getPassword());
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery("SELECT id FROM lectures");
 

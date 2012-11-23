@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Author {
+	static ProjectProperties p = new ProjectProperties();
 	private Integer id;
 	private String gender;
 	ArrayList<Integer> lectures;
@@ -19,7 +20,7 @@ public class Author {
 		
 		try {
 			Class.forName("org.postgresql.Driver");
-			conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/videolectures","damian",",[psql].");
+			conn = DriverManager.getConnection(p.getUrlAddress(), p.getUser(), p.getPassword());
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery("SELECT id FROM authors");
 

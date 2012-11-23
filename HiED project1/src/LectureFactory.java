@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 
 public class LectureFactory {
+	static ProjectProperties p = new ProjectProperties();
 
 	public static Lecture getLecture(Integer id){
 		ResultSet rs = null;
@@ -26,7 +27,7 @@ public class LectureFactory {
 		
 		try {
 			Class.forName("org.postgresql.Driver");
-			conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/videolectures","damian",",[psql].");
+			conn = DriverManager.getConnection(p.getUrlAddress(), p.getUser(), p.getPassword());
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery("SELECT * FROM lectures " +
 					"NATURAL JOIN authors_lectures " +

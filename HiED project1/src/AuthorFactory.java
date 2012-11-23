@@ -8,6 +8,8 @@ import java.util.ArrayList;
 
 public class AuthorFactory {
 	
+	static ProjectProperties p = new ProjectProperties();
+	
 	public static Author getAuthor(Integer id){
 		ResultSet rs = null;
 		Statement stmt = null; 
@@ -17,7 +19,7 @@ public class AuthorFactory {
 		
 		try {
 			Class.forName("org.postgresql.Driver");
-			conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/videolectures","damian",",[psql].");
+			conn = DriverManager.getConnection(p.getUrlAddress(), p.getUser(), p.getPassword());
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery("SELECT * FROM authors a " +
 					"LEFT JOIN authors_lectures l " +
