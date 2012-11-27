@@ -136,13 +136,15 @@ public class Lecture {
 				idList.add(rs.getInt("id"));
 
 		} catch (Exception e) {
-			System.out.println(e);
+			System.out.println("l1");
+			e.printStackTrace();
 		} finally {
 			try {
 				rs.close();
 				stmt.close();
 				conn.close();
 			} catch (SQLException e) {
+				System.out.println("l2");
 				e.printStackTrace();
 			}
 		}

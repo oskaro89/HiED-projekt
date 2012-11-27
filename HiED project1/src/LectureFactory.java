@@ -81,14 +81,15 @@ public class LectureFactory {
 			}
 
 		} catch (Exception e) {
-			System.out.println(e);
+			System.out.println("lf2");
+			e.printStackTrace();
 		} finally {
 			try {
 				rs.close();
 				stmt.close();
 				conn.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
+				System.out.println("lf2");
 				e.printStackTrace();
 			}
 		}
@@ -147,14 +148,15 @@ public class LectureFactory {
 			}
 
 		} catch (Exception e) {
-			System.out.println(e);
+			System.out.println("lf3");
+			e.printStackTrace();
 		} finally {
 			try {
 				rs.close();
 				stmt.close();
 				conn.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
+				System.out.println("lf4");
 				e.printStackTrace();
 			}
 		}

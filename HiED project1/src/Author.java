@@ -28,7 +28,7 @@ public class Author {
 				idList.add(rs.getInt("id"));
 
 		} catch (Exception e) {
-			System.out.println(e);
+			e.printStackTrace();
 		} finally {
 			try {
 				rs.close();

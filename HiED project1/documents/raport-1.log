@@ -1,0 +1,322 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.18)  27 NOV 2012 23:52
+entering extended mode
+**raport-1.tex
+("E:\TWO sem2\HIED\git\HiED-projekt\HiED project1\documents\raport-1.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latexsym.sty"
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2008/07/08 v3.8m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\polish.ldf"
+Language: polish 2005/03/31 v1.2l Polish support from the babel system
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+Package babel Info: Making " an active character on input line 83.
+\pl@left=\dimen104
+\pl@down=\dimen105
+\pl@right=\dimen106
+\pl@temp=\dimen107
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\cp1250.def"
+File: cp1250.def 2008/03/30 v1.1d Input encoding file
+))
+(C:\Users\Oskar\AppData\Roaming\MiKTeX\2.9\tex\latex\polski\polski.sty
+Package: polski 2008/02/24 v1.3.3 Polish language package
+
+Document language package `polski' v1.3.3 <2008/02/24>
+   Inputenc package detected. Catcodes not changed.
+\l@nohyphenation=\language70
+   Switching to Polish text encoding and Polish maths fonts.
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot4enc.def"
+File: ot4enc.def 2005/09/27 v1.99g Standard LaTeX file
+)
+LaTeX Font Info:    Try loading font information for OT4+cmr on input line 346.
+
+
+(C:\Users\Oskar\AppData\Roaming\MiKTeX\2.9\tex\latex\polski\ot4cmr.fd
+File: ot4cmr.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT4/cmr/bx/n on input line 346.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT4/cmss/m/n on input line 346.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT4/cmr/m/it on input line 346.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT4/cmtt/m/n on input line 346.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT4/cmss/bx/n on input line 346.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT4/cmr/bx/it on input line 346.
+LaTeX Font Info:    Encoding `OT1' has changed to `OT4' for symbol font
+(Font)              `operators' in the math version `normal' on input line 346.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT4/cmr/m/n on input line 346.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/plm/m/it on input line 346.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/plsy/m/n on input line 346.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/plex/m/n on input line 346.
+LaTeX Font Info:    Encoding `OT1' has changed to `OT4' for symbol font
+(Font)              `operators' in the math version `bold' on input line 346.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT4/cmr/bx/n on input line 346.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/plm/b/it on input line 346.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/plsy/b/n on input line 346.
+)
+("E:\TWO sem2\HIED\git\HiED-projekt\HiED project1\documents\raport-1.aux"
+
+LaTeX Warning: Label `tab:problem_1' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Try loading font information for OML+plm on input line 14.
+ (C:\Users\Oskar\AppData\Roaming\MiKTeX\2.9\tex\latex\polski\omlplm.fd
+File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    Try loading font information for OMS+plsy on input line 14.
+
+
+(C:\Users\Oskar\AppData\Roaming\MiKTeX\2.9\tex\latex\polski\omsplsy.fd
+File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    Try loading font information for OMX+plex on input line 14.
+
+
+(C:\Users\Oskar\AppData\Roaming\MiKTeX\2.9\tex\latex\polski\omxplex.fd
+File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <12> on input line 14.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <8> on input line 14.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <6> on input line 14.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 14.
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+Overfull \hbox (12.98808pt too wide) in paragraph at lines 28--29
+\OT4/cmr/m/n/10.95 pod-sta-wo-wymi sta-ty-sty-kami: roz-miar, liczba atry-but[]
+Aªw, liczba przyk[]L[]ad[]Aªw. 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <10.95> on input line 32.
+
+Overfull \hbox (9.34604pt too wide) in paragraph at lines 32--33
+[]\OT4/cmr/m/n/10.95 Nale[]L[]Ly r[]Aªwnie[]L[]L opisa[]A\OMS/cmsy/m/n/10.95 z 
+\OT4/cmr/m/n/10.95 spos[]Aªb osta-tecz-nej we-ry-fi-ka-cji al-go-rytm[]Aªw:
+ []
+
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <14.4> on input line 44.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <10> on input line 44.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <7> on input line 44.
+
+Overfull \hbox (26.57443pt too wide) in paragraph at lines 44--44
+[]\OT4/cmr/bx/n/14.4 Reprezentacja da-nych w pami[]A$[]$ci zewn[]A$[]$trznej 
+ []
+
+[1
+
+{C:/Users/Oskar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Overfull \hbox (46.61122pt too wide) in paragraph at lines 54--55
+[]\OT4/cmr/m/n/10.95 Mo[]L[]Lna opisa[]A\OMS/cmsy/m/n/10.95 z \OT4/cmr/m/n/10.9
+5 wi[]A$[]$cej ni[]L[]L jedno rozwi[]A...zanie, w ce-lach por[]Aªwnawczych. 
+ []
+
+
+Overfull \hbox (46.61122pt too wide) in paragraph at lines 68--69
+[]\OT4/cmr/m/n/10.95 Mo[]L[]Lna opisa[]A\OMS/cmsy/m/n/10.95 z \OT4/cmr/m/n/10.9
+5 wi[]A$[]$cej ni[]L[]L jedno rozwi[]A...zanie, w ce-lach por[]Aªwnawczych. 
+ []
+
+
+Overfull \hbox (51.59976pt too wide) in paragraph at lines 78--87
+ [] 
+ []
+
+
+Overfull \hbox (15.60239pt too wide) in paragraph at lines 95--103
+ [] 
+ []
+
+
+Overfull \hbox (7.0128pt too wide) in paragraph at lines 114--115
+\OT4/cmr/m/n/10.95 bli[]L[]Lszych s[]A...siad[]Aªw) nale[]L[]Ly za-sto-sowa[]A\
+OMS/cmsy/m/n/10.95 z \OT4/cmr/m/n/10.95 do-woln[]A... funkcj[]A$[]$ agre-
+ []
+
+[2]
+Overfull \hbox (4.72383pt too wide) in paragraph at lines 118--119
+[]\OT4/cmr/m/n/10.95 Najbli[]L[]Lszych s[]A...siad[]Aªw nale[]L[]Ly wy-szuka[]A
+\OMS/cmsy/m/n/10.95 z \OT4/cmr/m/n/10.95 dla mak-sy-mal-nie pierw-
+ []
+
+
+Overfull \hbox (29.5183pt too wide) in paragraph at lines 135--136
+[]\OT4/cmr/m/n/10.95 Jako miar[]A$[]$ po-do-bie[]Lÿstwa przy wy-szu-ki-wa-niu n
+aj-bli[]L[]Lszych s[]A...siad[]Aªw
+ []
+
+[3]
+Overfull \hbox (22.4037pt too wide) in paragraph at lines 148--155
+ [] 
+ []
+
+
+Overfull \hbox (0.22385pt too wide) in paragraph at lines 162--163
+\OT4/cmr/m/n/10.95 W celu po-gru-po-wa-nia da-nych nu-me-rycz-nych dla ka[]L[]L
+dego atry-butu nale[]L[]Ly
+ []
+
+
+Overfull \hbox (19.35345pt too wide) in paragraph at lines 162--163
+\OT4/cmr/m/n/10.95 cz[]A$[]$sto[]L[]ci, czyli otrzy-mane prze-dzia[]L[]y s[]A..
+. mniej wi[]A$[]$cej r[]Aªwnoliczne. 
+ []
+
+
+Overfull \hbox (24.24417pt too wide) in paragraph at lines 166--167
+[]\OT4/cmr/m/n/10.95 Przy po-szu-ki-wa-niu naj-bli[]L[]Lszych s[]A...siad[]Aªw 
+nale[]L[]Ly si[]A$[]$ pos[]L[]u[]L[]Ly[]A\OMS/cmsy/m/n/10.95 z
+ []
+
+[4]
+Overfull \hbox (8.83527pt too wide) in paragraph at lines 180--181
+\OT4/cmr/m/n/10.95 W niekt[]Aªrych kon-kur-sach dane maj[]A... po-sta[]A\OMS/cm
+sy/m/n/10.95 z \OT4/cmr/m/n/10.95 zale[]L[]Lno[]L[]ci pomi[]A$[]$dzy
+ []
+
+
+Overfull \hbox (5.64418pt too wide) in paragraph at lines 182--183
+\OT4/cmr/m/n/10.95 wy-brane pro-dukty, oraz wy-szu-ki-wa-niu po-dob-nych pro-du
+kt[]Aªw ze wzgl[]A$[]$du
+ []
+
+
+Overfull \hbox (12.42102pt too wide) in paragraph at lines 182--183
+\OT4/cmr/m/n/10.95 na ``wy-bie-raj[]A...cych'' u[]L[]Lytkownik[]Aªw. W obydw[]A
+ªch przy-pad-kach nale[]L[]Ly
+ []
+
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 187.
+
+Overfull \hbox (2.56714pt too wide) in paragraph at lines 187--188
+\OT4/cmr/m/n/10.95 Na ko[]Lÿcu jest za-wsze miej-sce na kr[]Aªtkie pod-su-mo-wa
+-nie (maks. 1/2 strony).
+ []
+
+[5] ("E:\TWO sem2\HIED\git\HiED-projekt\HiED project1\documents\raport-1.aux")
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 956 strings out of 494045
+ 12639 string characters out of 3145969
+ 69637 words of memory out of 3000000
+ 4260 multiletter control sequences out of 15000+200000
+ 17242 words of font info for 55 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 24i,10n,24p,435b,259s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Oskar/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/pl/plms.enc}{C:/Us
+ers/Oskar/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/pl/plmi.enc}{C:/Users/Oska
+r/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/pl/plrm.enc}<D:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Oskar/AppData/Roaming/MiKTeX/
+2.9/fonts/type1/public/pl/plbx10.pfb><C:/Users/Oskar/AppData/Roaming/MiKTeX/2.9
+/fonts/type1/public/pl/plbx12.pfb><C:/Users/Oskar/AppData/Roaming/MiKTeX/2.9/fo
+nts/type1/public/pl/plmi10.pfb><C:/Users/Oskar/AppData/Roaming/MiKTeX/2.9/fonts
+/type1/public/pl/plmi6.pfb><C:/Users/Oskar/AppData/Roaming/MiKTeX/2.9/fonts/typ
+e1/public/pl/plr10.pfb><C:/Users/Oskar/AppData/Roaming/MiKTeX/2.9/fonts/type1/p
+ublic/pl/plr12.pfb><C:/Users/Oskar/AppData/Roaming/MiKTeX/2.9/fonts/type1/publi
+c/pl/plr17.pfb><C:/Users/Oskar/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/pl
+/plr8.pfb><C:/Users/Oskar/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/pl/plsy
+10.pfb>
+Output written on raport-1.pdf (5 pages, 145575 bytes).
+PDF statistics:
+ 85 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
