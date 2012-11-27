@@ -90,8 +90,23 @@ public class Author {
 		return key;
 	}
 	
+	public HashMap<Integer, Double> getJacards(ArrayList<Author> authors){
+		HashMap<Integer, Double> jacardsList = new HashMap<Integer, Double>();
+		for (Author author : authors) {
+			double jaccardValue = getJaccard(author);
+			if (jacardsList.size() < 50) {				
+				jacardsList.put(author.id, jaccardValue);
+			} else if (jaccardValue > getMinimumValue(jacardsList)) {
+				jacardsList.remove(getMinimumKey(jacardsList));
+				jacardsList.put(author.id, jaccardValue);
+			}
+		}
+		
+		return jacardsList;
+	}
+	
 	public HashMap<Integer, Double> getJacards(){
-		int i = 1000;
+		int i = 100;
 		HashMap<Integer, Double> jacardsList = new HashMap<Integer, Double>();
 		for (Integer otherAuthorId : getAuthorsIds()) {
 			i--;

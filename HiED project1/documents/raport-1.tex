@@ -1,0 +1,174 @@
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[polish]{babel}
+\usepackage[cp1250]{inputenc}
+\usepackage[MeX]{polski}
+
+\author{Imiê Nazwisko $\quad$ Imiê Nazwisko}
+
+\title{Eksploracja du¿ych wolumenów danych \\ 
+\large{{\bf Projekt -- Sprawozdanie I} \\ Sformu³owanie problemu i przetwarzanie danych}} 
+
+\begin{document}
+
+\maketitle 
+
+\section{Sformu³owanie problemu}
+
+Krótka informacja o wybranym konkursie: nazwa, strona internetowa, nagroda :), zakoñczony.
+
+\subsection{Krótki opis problemu}
+
+Krótki i konkretny opis zadania konkursowego.
+
+(maks. 1/2 strony)
+
+\subsection{Opis danych}
+
+Opis zbioru ucz¹cego, waliduj¹cego (je¿eli jest) i testowego wraz z podstawowymi statystykami: rozmiar, liczba atrybutów, liczba przyk³adów.
+
+Warto przedstawiæ postaæ typowych przyk³adów ucz¹cych oraz testowych.
+
+Nale¿y równie¿ opisaæ sposób ostatecznej weryfikacji algorytmów: trwaj¹cy konkurs (wynik koñcowy w konkursie; ocena na podstawie tablicy wyników, czyli na zbiorze waliduj¹cym), mo¿liwoœæ weryfikacji po zakoñczeniu konkursu na jego stronie, wewnêtrzny zbiór testowy (rozmiar, jak zosta³ wyodrêbniony, kiedy zostanie wykorzystany, itp.).
+
+(maks. 3/4 strony)
+
+
+\subsection{Opis metody oceny rozwi¹zañ}
+
+Dok³adny i zwiêz³y opis metody oceny rozwi¹zania (je¿eli algorytm bêdzie testowany wewnêtrznie, to nale¿y napisaæ odpowiednie oprogramowania oceniaj¹ce rozwi¹zanie). 
+
+(maks. 1/2 strony)
+
+
+\section{Reprezentacja danych w pamiêci zewnêtrznej}
+
+Krótki opis (bardzo zwiêz³y i konkretny) z uwzglêdnieniem:
+\begin{itemize}
+\item opisu reprezentacji z jej zaletami i wadami, równie¿ z perspektywy eksperymentów, które nale¿y przeprowadziæ,
+\item dyskusji na temat konfiguracji i administracji danego rozwi¹zania,
+\item dyskusji na temat czasu utworzenia i objêtoœci reprezentacji danych,
+\item dyskusji na temat napotkanych trudnoœci.
+\end{itemize}
+
+Mo¿na opisaæ wiêcej ni¿ jedno rozwi¹zanie, w celach porównawczych.
+
+(maks. 2 strony)
+
+
+\section{Reprezentacja danych w pamiêci operacyjnej}
+
+Krótki opis (bardzo zwiêz³y i konkretny) z uwzglêdnieniem:
+\begin{itemize}
+\item opisu reprezentacji z jej zaletami i wadami, równie¿ z perspektywy eksperymentów, które nale¿y przeprowadziæ,
+\item dyskusji na temat czasu wczytywania do pamiêci, dostêpu do danych i objêtoœci danych,
+\item dyskusji na temat napotkanych trudnoœci.
+\end{itemize}
+
+Mo¿na opisaæ wiêcej ni¿ jedno rozwi¹zanie, w celach porównawczych.
+
+(maks. 2 strony)
+
+\section{Eksperyment}
+
+W tym rozdziale nale¿y umieœciæ wyniki eksperymentów. Nale¿y zamieœciæ krótkie komentarze oraz tabele z wynikami (Tabela~\ref{tab:problem_1} jest przyk³adem jak stworzyæ tabelê w \LaTeX'u).
+
+\begin{table}
+\begin{center}
+\begin{tabular}{lll}
+To s¹ kolumny & zawieraj¹ce np. & czas odpowiedzi na zapytanie itp. \\ 
+\hline
+Opis i liczby: & 99.99\% & 99.99\% \\
+Opis i liczby: & 99.99\% & 99.99\% \\
+Opis i liczby: & 99.99\% & 99.99\% \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Wyniki eksperymentalne}
+\label{tab:problem_1}
+\end{table}
+
+Nale¿y wykonaæ nastêpuj¹ce zapytania:
+\begin{enumerate}
+\item Grupowanie,
+\item Wyszukiwanie najbli¿szych $k = 50$ s¹siadów.
+\end{enumerate}
+
+Dla otrzymanych partycji danych (przez grupowanie i wyszukanie najbli¿szych s¹siadów) nale¿y zastosowaæ dowoln¹ funkcjê agreguj¹c¹ na dowolnych atrybutach. Oczywiœcie, najlepiej jest wybraæ atrybut decyzyjny (wyjœciowy).
+
+Dla wszystkich eksperymentów nale¿y podaæ czas wykonania. 
+
+Najbli¿szych s¹siadów nale¿y wyszukaæ dla maksymalnie pierwszych 10 tys. przyk³adów, ale szukanie odbywa siê w ca³ym zbiorze danych.
+
+Ca³y eksperyment mo¿na powtórzyæ parokrotnie i uœredniæ wyniki (mo¿na podaæ b³¹d standardowy). Przy wyznaczaniu czasów nie nale¿y braæ pod uwagê czasu wyœwietlania wyników.
+
+W zale¿noœci od rodzaju problemu, proszê, stosowaæ siê do poni¿ej opisanych wytycznych. Je¿eli dany problem nie pasuje do ¿adnego wy¿ej opisanego typu, to proszê o kontakt. 
+
+(maks. 4 strony (razem z tabelami)). 
+
+\subsection{Tabelaryczne dane nominalne}
+
+W przypadku danych nominalnych nale¿y przeprowadziæ grupowanie:
+\begin{itemize}
+\item po wszystkich atrybutach (w przypadku du¿ej liczby atrybutów, grupowanie powinno dotyczyæ tylko pierwszych 20 atrybutów),
+\item dla ka¿dego z atrybutu z osobna,
+\item oraz dla ka¿dej pary atrybutów (maksymalnie dla pierwszych 100 atrybutów).
+\end{itemize}  
+
+Jako miarê podobieñstwa przy wyszukiwaniu najbli¿szych s¹siadów nale¿y zastosowaæ wspó³czynnik Jaccarda. Mierzy on podobieñstwo miêdzy dwoma zbiorami i jest zdefiniowany jako iloraz mocy czêœci wspólnej zbiorów i mocy sumy tych zbiorów:
+$$
+    J (A,B) = {{|A \cap B|}\over{|A \cup B|}} 
+$$
+gdzie $A$ i $B$ s¹ zbiorami, które odpowiadaj¹ obiektom opisanym przez atrybuty nominalne (proszê zwróciæ uwagê, ¿e atrybut binarny czêsto wskazuje, czy dana wartoœæ wystêpuje, czy te¿ nie).
+
+Dla poni¿szego przyk³adu zbiór $A =$ $\{$czerwony, du¿y, kombi$\}$ odpowiada pierwszemu obiektowi, a zbiór $B$ = $\{$niebieski, du¿y, coupe, kabriolet$\}$ drugiemu. Wspó³czynnik Jaccarda wynosi:
+$$
+J (A,B) = \frac{1}{6}
+$$
+
+
+\begin{center}
+\begin{tabular}{cccccccc}
+kolor & rozmiar & kombi & sedan & coupe & kabriolet & limuzyna & minivan \\
+\hline
+czerwony & du¿y & 1 & 0 & 0 & 0 & 0 & 0 \\
+niebieski & du¿y & 0 & 0 & 0 & 1 & 1 &  0 \\
+\hline
+\end{tabular}
+\end{center}
+
+Mo¿na te¿ dokonaæ wczeœniejszej binaryzacji wszystkich wielowartoœciowych atrybutów nominalnych i dalej operowaæ na atrybutach binarnych, które wskazuj¹ czy dany element wystêpuje w zbiorze.
+
+
+\subsection{Tabelaryczne dane numeryczne}
+
+W celu pogrupowania danych numerycznych dla ka¿dego atrybutu nale¿y przeprowadziæ dyskretyzacjê wartoœci numerycznych do 5 wartoœci. Ka¿da wartoœæ odpowiada przedzia³owi wartoœci dla atrybutu numerycznego. Nale¿y przeprowadziæ dyskretyzacjê wed³ug równej czêstoœci, czyli otrzymane przedzia³y s¹ mniej wiêcej równoliczne.
+
+Dla tak przekszta³conych atrybutów nale¿y wykonaæ normalne grupowanie, zgodnie z z opisem w punkcie 4.1.
+
+Przy poszukiwaniu najbli¿szych s¹siadów nale¿y siê pos³u¿yæ miar¹ euklidesow¹. Wczeœniej nale¿y jednak ustandaryzowaæ wartoœci atrybutów, tzn. od wartoœci ka¿dego atrybutu odejmujemy œredni¹ i dzielimy przez odchylenie standardowe (czyli przeprowadzamy zmienne o ró¿nych jednostkach do zmiennych niemianowanych).
+
+\subsection{Tabelaryczne dane nominalne i numeryczne}
+
+W przypadku wymieszanych danych nominalnych i numerycznych dzielimy dane na dwie czêœci i wykonujemy eksperymenty osobno dla ka¿dej czêœci zgodnie z opisem w dwóch powy¿szych punktach.
+
+\subsection{Dane tekstowe}
+
+Dane tekstowe nale¿y zamieniæ na dane nominalne, gdzie ka¿dy atrybut odpowiada jednemu s³owu. Eksperyment nale¿y wykonaæ dla 100 najczêœciej wystêpuj¹cych s³ów. Mo¿na (nie jest konieczne) wykonaæ odpowiednie przekszta³cenia danych tekstowych, takie jak stematyzacja lub lematyzacja.
+
+Dla tak przekszta³conych danych nale¿y postêpowaæ zgodnie z opisem w punkcie 4.1.
+
+\subsection{Dane macierzowe}
+
+W niektórych konkursach dane maj¹ postaæ zale¿noœci pomiêdzy dwoma typami obiektów, np. u¿ytkownikami i produktami. W takim przypadku nale¿y wykonaæ grupowanie dla ka¿dego typu obiektów osobno. Je¿eli jedyn¹ informacjê o obiekcie jest jego identyfikator, to grupowanie dotyczyæ bêdzie tylko jednego atrybutu. W innym przypadku nale¿y stosowaæ siê do opisów w powy¿szych punktach.
+
+Wyszukiwanie najbli¿szych s¹siadów w tym przypadku powinno polegaæ na wyszukiwaniu podobnych u¿ytkowników ze wzglêdu na wybrane produkty, oraz wyszukiwaniu podobnych produktów ze wzglêdu na ``wybieraj¹cych'' u¿ytkowników. W obydwóch przypadkach nale¿y wykorzystaæ wspó³czynnik Jaccarda w celu obliczenia podobieñstwa.
+
+
+\section{Podsumowanie}
+
+Na koñcu jest zawsze miejsce na krótkie podsumowanie (maks. 1/2 strony). {\bf Ca³oœæ raportu nie mo¿e przekraczaæ 8 stron.}
+
+
+\end{document}  

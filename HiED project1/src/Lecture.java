@@ -78,28 +78,21 @@ public class Lecture {
 			disjunction += 2;
 		}
 		
-		if (rec_date.equals(lecture.pub_date)){
+		if (rec_date.equals(lecture.rec_date)){
 			agregation++;
 			disjunction++;
 		} else {
 			disjunction += 2;
 		}
 		
-		if (rec_date.equals(lecture.name)){
+		if (pub_date.equals(lecture.pub_date)){
 			agregation++;
 			disjunction++;
 		} else {
 			disjunction += 2;
 		}
 		
-		if (rec_date.equals(lecture.description)){
-			agregation++;
-			disjunction++;
-		} else {
-			disjunction += 2;
-		}
-		
-		if (rec_date.equals(lecture.slide_titles)){
+		if (name.equals(lecture.name)){
 			agregation++;
 			disjunction++;
 		} else {
@@ -155,7 +148,42 @@ public class Lecture {
 		}
 		return idList;
 	}
+	
+	private double getMinimumValue(HashMap<Integer, Double> map){
+		double min = Double.MAX_VALUE;
+		for (Integer i : map.keySet()) {
+			if (min > map.get(i))
+				min = map.get(i);
+		}
+		return min;
+	}
+	
+	private Integer getMinimumKey(HashMap<Integer, Double> map){
+		double min = Double.MAX_VALUE;
+		Integer key = -1;
+		for (Integer i : map.keySet()) {
+			if (min > map.get(i)){
+				min = map.get(i);
+				key = i;
+			}
+		}
+		return key;
+	}
 
+	public HashMap<Integer, Double> getJacards(ArrayList<Lecture> lectures){
+		HashMap<Integer, Double> jacardsList = new HashMap<Integer, Double>();
+		for (Lecture lecture : lectures) {
+			double jaccardValue = getJaccard(lecture);
+			if (jacardsList.size() < 50) {				
+				jacardsList.put(lecture.id, jaccardValue);
+			} else if (jaccardValue > getMinimumValue(jacardsList)) {
+				jacardsList.remove(getMinimumKey(jacardsList));
+				jacardsList.put(lecture.id, jaccardValue);
+			}
+		}
+		
+		return jacardsList;
+	}
 	
 	public HashMap<Integer, Double> getJacards(){
 		HashMap<Integer, Double> jacardsList = new HashMap<Integer, Double>();
